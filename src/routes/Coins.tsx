@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { useQuery } from "react-query";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -6,6 +6,8 @@ import { fetchCoins } from "../api";
 
 const Container = styled.div`
   padding: 0px 20px;
+  max-width: 600px;
+  margin: 0 auto;
 `;
 
 const Header = styled.header`
@@ -74,6 +76,9 @@ function Coins() {
   }, []); */
   return (
     <Container>
+      <Helmet>
+        <title>Coin</title>
+      </Helmet>
       <Header>
         <Title>Coin</Title>
       </Header>
