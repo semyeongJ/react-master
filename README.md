@@ -9,5 +9,4 @@
     <li>Typescript</li>
     <li>Firebase</li>
 </ul>
-<span>수강중입니다.</span>
 <span>https://semyeongJ.github.io/react-master</span>
